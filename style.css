@@ -1,0 +1,642 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Cairo', sans-serif;
+     font-family: 'Poppins', sans-serif;
+}
+
+.destop-width {
+     max-width: 1980px;
+     width: 1200px;
+     margin: 0 auto;
+}
+
+.plex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+/* ---------- Stard nab ---------- */
+.nab {
+     background-color: #e4f3fc;
+     /* backdrop-filter: blur(1px); */
+     position: fixed;
+     padding-top: 0.1em;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+
+}
+
+/* ---------- Stard hn ---------- */
+
+
+.h-n {
+     padding: 0.9em 0;
+}
+
+
+/* ---------- Stard logo ---------- */
+
+
+.logo img {
+     width: 3em;
+     height: 3em;
+     margin-right: 0.5em;
+     transition: 0.5s ease-in-out;
+}
+
+.logo img:hover {
+     transform: scale(1.1);
+}
+
+/* ---------- Stard name ---------- */
+.my-name {
+     color: #050a30;
+     font-size: 20px;
+     font-weight: 700;
+     font-family: 'Cairo', sans-serif;
+}
+
+.my-job {
+     margin-top: 0.2em;
+     color: #777;
+     font-family: 'Cairo', sans-serif;
+     font-size: 0.5em;
+}
+
+/* ---------- End name ---------- */
+/* ---------- End logo ---------- */
+/* ---------- Stard menu ---------- */
+ui li {
+     list-style: none;
+     margin-right: 0.9em;
+     font-size: 19px;
+     font-family: 'Cairo', sans-serif;
+}
+
+ui li a {
+     text-decoration: none;
+     color: #050a30;
+}
+
+ui li a:hover {
+     color: #999;
+}
+
+.contact {
+     width: 6.5em;
+     height: 2em;
+     border: none;
+     border-radius: 0.9em;
+     outline: none;
+     background-color: #050a30;
+     transition: 0.5s;
+}
+
+.contact a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+}
+
+.contact:hover {
+     background-color: yellow;
+}
+
+.contact:hover>a {
+     color: #050a30;
+
+}
+
+/* ---------- end menu ---------- */
+/* ---------- End h-n ---------- */
+/* ---------- End nab ---------- */
+
+
+/* ---------- Stard about-me---------- */
+.about-me {
+     /* background-color: #050a30; */
+     /* height: 380px; */
+     background-color: #050a30;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.about {
+     margin-top: 4.9em;
+     background-image: url(photo/about.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.about-photo {
+     margin-right: 5em;
+}
+
+/* ---------- Stard about-text---------- */
+.about-text {
+     width: 35em;
+     margin: 2em;
+}
+
+.meet-you {
+     margin-bottom: 1em;
+     color: #d8d5d5;
+     font-family: 'Cairo', sans-serif;
+}
+
+.hello {
+     margin-bottom: 0.5em;
+     font-size: 25px;
+     font-weight: 700;
+     /* color: #050a30; */
+     color: #dbd8d8;
+     font-family: 'Cairo', sans-serif;
+}
+
+.fa-hand-sparkles {
+     margin-left: 0.5em;
+     font-size: 20px;
+     color: yellow;
+     animation: hello-hand 2.5s infinite alternate-reverse;
+     position: relative;
+}
+
+@keyframes hello-hand {
+     0% {
+          left: 0%;
+     }
+
+     50% {
+          right: -5%;
+     }
+
+     100% {
+          left: -1%;
+     }
+}
+
+.hed-line {
+     margin-bottom: 0.5em;
+     color: #fff;
+     font-family: 'Cairo', sans-serif;
+     font-size: 30px;
+}
+
+.cata {
+     color: yellow;
+}
+
+.about-deta {
+     margin-bottom: 0.5em;
+     font-family: 'Poppins', sans-serif;
+     color: #dbd8d8;
+     line-height: 1.5em;
+}
+
+.fa-location-dot {
+     font-size: 28px;
+     color: #dbd8d8;
+     margin-right: 0.3em;
+}
+
+.loc-nam {
+     font-family: 'Cairo', sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     color: yellow;
+}
+
+/* ---------- end about-text ---------- */
+
+/* ---------- Stard about-photo ---------- */
+.about-photo img {
+     width: 15em;
+     height: 15em;
+     margin: 7em 6.5em 0 0;
+     animation: about-mg 2.5s infinite alternate-reverse;
+     position: relative;
+}
+
+@keyframes about-mg {
+     0% {
+          top: -1.2em;
+     }
+
+     50% {
+          bottom: 0em;
+     }
+
+     100% {
+          top: -0px;
+     }
+}
+
+/* ---------- end about-photo ---------- */
+/* ---------- end about-me ---------- */
+
+
+/* ---------- Stard service ---------- */
+.services-deta {
+     width: 40em;
+     margin: 0.9em 0 1em;
+}
+
+.servi-h {
+     margin-bottom: 0.5em;
+     color: #050a30;
+     font-family: 'Cairo', sans-serif;
+     font-size: 30px;
+}
+
+.servi-dis {
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+     line-height: 25px;
+}
+
+.services-cetra-option {
+     overflow: hidden;
+}
+
+.work-cetagori {
+     width: 24em;
+     height: 12em;
+     margin: 1em 0.9em 1em 0;
+     padding: 1em;
+     background-color: #E5ECF0;
+     border-radius: 0.9em;
+     box-shadow: 1px 1px 5px #999;
+     transition: 0.6s ease-in-out;
+}
+
+.work-cetagori:hover {
+     background-color: #050a30;
+}
+
+.work-cetagori:hover>.work-cata-h {
+     /* color: yellow; */
+     color: #fff;
+}
+
+.work-cetagori:hover>.work-cata-det {
+     color: #fff;
+}
+
+.work-cata-svg {
+     width: 2.5em;
+     height: 2.5em;
+     margin-bottom: 0.9em;
+}
+
+.work-cata-h {
+     color: #050a30;
+     font-family: 'Cairo', sans-serif;
+     font-size: 20px;
+     margin-bottom: 0.5em;
+     transition: 0.4s ease-in-out;
+}
+
+.work-cata-det {
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.5em;
+     transition: 0.4s ease-in-out;
+}
+
+/* ---------- End service ---------- */
+
+
+/* ---------- Stard project ---------- */
+.projoct-d {
+     margin-bottom: 1.9em;
+}
+
+.projoct-h {
+     padding: 1em 0;
+}
+
+.my-project {
+     margin: 0.5em 0;
+}
+
+.projict-details {
+     width: 37em;
+     height: 32em;
+     padding: 1.5em 2em;
+     box-shadow: 1px 1px 5px #928f8f;
+     border-radius: 0.9em;
+     background-color: #E5ECF0;
+}
+
+.p-d-mg {
+     width: 33em;
+     height: 20em;
+     margin: 0 auto;
+     overflow: hidden;
+     border-radius: 0.7em;
+}
+
+.p-d-mg:hover>img {
+     transform: scale(1.1);
+}
+
+.p-d-mg img {
+     width: 35em;
+     height: 22em;
+     transition: 0.9s ease-in-out;
+}
+
+.front-end {
+     margin: 1.5em 0 0.5em 0;
+     color: #555;
+}
+
+.quality {
+     color: #494545;
+     font-family: 'Cairo', sans-serif;
+     font-size: 17px;
+     margin-bottom: 0.5em;
+     text-transform: uppercase;
+}
+
+.quality:hover {
+     color: #050a30;
+}
+
+/* ---------- End project ---------- */
+
+/* ---------- Stard project ---------- */
+.process {
+     background-color: #333;
+     height: 45em;
+}
+
+.process-top {
+     width: 25em;
+     margin: 2.5em auto;
+     text-align: center;
+
+}
+
+.process {
+     color: #dbd8d8;
+     padding: 0.1em 0;
+}
+
+.process-h {
+     color: #ffffff;
+     font-family: 'Cairo', sans-serif;
+     font-size: 26px;
+     margin: 0.5em 0;
+}
+
+.process-h:hover {
+     color: yellow;
+}
+
+.working-rules {
+     width: 24.2em;
+     height: 11.5em;
+     margin-bottom: 1em;
+     padding: 1em;
+     /* border: 1px dotted #E5ECF0; */
+     border-radius: 0.9em;
+     box-shadow: 0.1px 0.1px 3px #e5ecf0;
+}
+
+.working-rules:hover {
+     box-shadow: 0.9px 0.9px 3px #e5ecf0;
+     transform: scale(1.01);
+}
+
+.research {
+     width: 9.5em;
+     height: 2.5em;
+     margin-bottom: 1em;
+}
+
+.number {
+     margin-right: 0.1em;
+     font-family: 'Cairo', sans-serif;
+     font-size: 4em;
+     font-weight: 800;
+     color: #858282;
+
+}
+
+.name {
+     font-family: 'Cairo', sans-serif;
+     font-size: 2em;
+     font-weight: 750;
+     color: #fff;
+}
+
+.work-detalis {
+     margin: 0.5em 0;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.2em;
+     color: #e5ecf0;
+}
+
+/* ---------- End project ---------- */
+
+/* ---------- Stard reviw ---------- */
+.process-name {
+     margin-bottom: 0.5em;
+     font-family: 'Poppins', sans-serif;
+}
+
+.process-hi {
+     margin-bottom: 0.5em;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.7em;
+     color: #050a30;
+}
+
+.client {
+     width: 24.2em;
+     height: 13em;
+     margin-bottom: 0.9em;
+     padding: 1em;
+     border: 1px solid;
+     border-radius: 0.9em;
+}
+
+.comment {
+     margin-bottom: 0.9em;
+     font-family: 'Poppins', sans-serif;
+     text-align: justify;
+     line-height: 1.2em;
+}
+
+.client-profile {
+     width: 17em;
+     margin-bottom: 0.9em;
+}
+
+.client-profile img {
+     width: 3.5em;
+     height: 3.5em;
+     border-radius: 50%;
+}
+
+.client-name {
+     font-family: 'Cairo', sans-serif;
+     margin-bottom: 0.2em;
+}
+
+/* ---------- End reviw ---------- */
+
+/* ---------- Stard blog ---------- */
+.blog {
+     margin-top: 3em;
+     padding: 1.5em;
+     /* background-image:linear-gradient( to right, #32EEEE, #5475E9  ) ; */
+     background-image: url(photo/about.png);
+     background-color: #c7c6c6;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.blog-top {
+     width: 33em;
+     margin-bottom: 1em;
+}
+
+.post-name {
+     color: #fff;
+}
+
+.post-name:hover {
+     /* color: #050a30; */
+     color: #000;
+}
+
+.post {
+     width: 32em;
+}
+
+.post-mg {
+
+     width: 10em;
+     height: 5em;
+     margin-right: 0.9em;
+     overflow: hidden;
+     border-radius: 0.9em;
+     transition: 0.5s ease-in-out;
+}
+
+.post-mg img {
+     width: 7em;
+     height: 5em;
+}
+
+.post-mg:hover {
+     transform: translateY(-5px);
+}
+
+.bus-top a {
+     margin-bottom: 0.2em;
+     text-decoration: none;
+     font-family: 'Poppins', sans-serif;
+     color: #fff;
+}
+
+.bus-top a:hover {
+     color: #000;
+}
+
+.bus-foot a {
+     text-decoration: none;
+     font-family: 'Cairo', sans-serif;
+     color: #494545;
+}
+
+.bus-foot a:hover {
+     color: #050a30;
+}
+
+/* ---------- End blog ---------- */
+
+/* ---------- Stard contact-me ---------- */
+.contact-me {
+     padding: 0.5em;
+     background-color: #050a30;
+
+}
+
+.contact-us {
+     width: 55em;
+     margin: 5em auto;
+     text-align: center;
+
+}
+
+.new-web {
+     margin-bottom: 0.5em;
+     color: #fff;
+     font-family: 'Cairo', sans-serif;
+     font-size: 3em;
+     font-weight: bold;
+}
+
+.help-you {
+     width: 30em;
+     margin: 0 auto 1.5em;
+     color: #fff;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.3em;
+     line-height: 1.3em;
+}
+
+.mail {
+     margin-bottom: 0.5em;
+     color: #fff;
+}
+
+.email-add {
+     margin: 1em 2em;
+
+}
+
+.email-add a {
+     font-size: 2em;
+     color: yellow;
+     text-decoration: none;
+}
+
+.email-add a:hover {
+     color: #fff;
+}
+.follow{
+    text-align: end;
+    margin:0 5em 1em;
+}
+
+.us{
+     color: #fff;
+     font-size: 2em;
+     margin-bottom: 0.5em;
+}
+/* .us:hover{
+     color: yellow;
+} */
+.fa-brands{
+     width: 1.5em;
+     height: 1.5em;
+     /* background-color: #d8d5d5; */
+     font-size: 2em;
+     color: yellow;
+     border-radius: 50%;
+     transition: 0.3s ease-in-out;
+}
+.fa-brands:hover{
+     color: #fff;
+     transform: scale(1.1);
+}
+/* ---------- End contact-me ---------- */
+
